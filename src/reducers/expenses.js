@@ -14,7 +14,6 @@ export default (state = expansesReduserDefaultState, action) => {
                 return expense;
             });
         case 'REMOVE_EXPENSE':
-            console.log(action.id);
             return state.filter(({ id }) => id !== action.id);
         default:
             return state;
