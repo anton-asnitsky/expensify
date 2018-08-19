@@ -17,21 +17,4 @@ const jsx = (
     </Provider>
 );
 
-store.dispatch(addExpense({
-    description: 'Water bill',
-    amount: 300, 
-    createdAt: 21000
-}));
-store.dispatch(addExpense({
-    description: 'Gas bill',
-    amount: 1250,
-    createdAt: 1756
-}));
-store.dispatch(addExpense({
-    description: 'Rent',
-    amount: 7200,
-    createdAt: 109500
-}));
-
-
 ReactDOM.render(jsx, document.getElementById('app'));
