@@ -3,6 +3,10 @@
 # compiled output
 public/dist/*
 public/scripts/*
+public/bundle.js
+public/bundle.js.map
+public/styles.css
+public/styles.css.map
 /dist
 /dst
 /tmp
@@ -32,7 +36,7 @@ testem.log
 composer.lock
 src/*.map
 server/*.map
-server/*.js
+
 *.code-workspace
 
 # e2e
