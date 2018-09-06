@@ -1,4 +1,5 @@
-import  * as firebase from 'firebase';
+import  * as firebase   from 'firebase';
+import  moment          from 'moment';
 
 const config = {
     apiKey: "AIzaSyDj2y_UGc12pqVm1pASdUOgNtvYNXid2VQ",
@@ -12,18 +13,4 @@ firebase.initializeApp(config);
 
 const database = firebase.database();
 
-// database.ref().set({
-//     name: 'Anton Asnitsky',
-//     age: 42,
-//     isSIngle: false,
-//     location: {
-//         city: 'Hadera',
-//         country: 'Israel',
-//     }
-// }).then(() => {
-//     console.log('person data was added');
-// }).catch((e) => {
-//     console.log('Data update was failed: ', e);
-// });
-
-database.ref('isSIngle').remove();
+export { firebase, database as default };
